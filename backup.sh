@@ -5,11 +5,11 @@ then
 echo "Directory $DIRECTORY does not exist"
 echo "creating directory witinin $DIRECTORY"
 sudo mkdir /home/root/backups
-
-sudo chmod -R 777 /home/root/backups	
-sudo rm -r /home/root/backups/*	
+else
 echo "Directory $DIRECTORY exists"
 echo "Proceeding with backups"
+sudo chmod -R 777 /home/root/backups	
+sudo rm -r /home/root/backups/*	
 fi
 
 echo ......................Creating PACRIS BACKUPS..................
